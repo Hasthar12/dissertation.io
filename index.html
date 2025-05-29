@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dihydropyridine Synthesis via Preyssler Catalysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000080; /* Navy Blue */
+            color: #E0E7FF; /* Light text for contrast */
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #1A202C; /* Darker shade for content area */
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #BFDBFE; /* Lighter blue for headings */
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            background-color: #2D3748; /* Slightly lighter background for tables */
+            border-radius: 0.5rem;
+            overflow: hidden; /* Ensures rounded corners apply to content */
+        }
+        th, td {
+            border: 1px solid #4A5568;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #4A5568;
+            font-weight: 600;
+            color: #BFDBFE;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-spacing {
+            margin-top: 2.5rem; /* Space between major sections */
+            padding-top: 1.5rem;
+            border-top: 1px solid #4A5568;
+        }
+        .subsection-spacing {
+            margin-top: 1.5rem; /* Space between subsections */
+        }
+        .image-caption {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #A0AEC0;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .table-caption {
+            text-align: center;
+            font-size: 1rem;
+            color: #BFDBFE;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="container">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold leading-tight mb-2">Catalytic Synthesis of Fused 1,4-Dihydropyridines and 1,4-Dihydropyridine Derivatives Using Preyssler Heteropolyacids</h1>
+            <p class="text-xl font-semibold text-gray-400">REVIEW PAPER</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/University_of_Calcutta_Seal.svg/1200px-University_of_Calcutta_Seal.svg.png" alt="University of Calcutta Seal" class="w-32 h-32 mx-auto my-4 rounded-full border-2 border-blue-300">
+            <p class="text-gray-300">B.Sc Chemistry(Honours) Semester VI (Under CBCS) Examination</p>
+            <p class="text-gray-300">C.U Roll No. – 223012-21-0214</p>
+            <p class="text-gray-300">C.U Registration no. – 012-1111-1131-22</p>
+            <p class="text-gray-300">Paper- DSE-B4( Dissertation)</p>
+            <p class="mt-4 text-gray-300">( Signature of the student)</p>
+        </header>
+
+        <section class="section-spacing">
+            <h2 class="text-3xl mb-4">Acknowledgement</h2>
+            <p>The successful completion of this dissertation would not have been possible without the invaluable guidance, unwavering support, and insightful mentorship provided by Dr. Paramita Das. Their expertise and dedication were instrumental in shaping the direction of this research and navigating its complexities.</p>
+            <p>This dissertation is submitted by Unmesh Pramanik.</p>
+            <p>The author extends sincere gratitude to Professors of Chemistry department of Asutosh College for their collaborative spirit, stimulating discussions, and assistance in various aspect of laboratory work. Their camaraderie and support created a conductive and enriching research environment.</p>
+        </section>
+
+        <section class="section-spacing">
+            <h2 class="text-3xl mb-4">Contents</h2>
+            <ul class="list-disc ml-6 text-blue-300">
+                <li><a href="#abstract" class="hover:underline">Abstract</a></li>
+                <li><a href="#chapter1" class="hover:underline">Chapter 1: Introduction to 1,4-Dihydropyridines and Heteropolyacids</a></li>
+                <li><a href="#chapter2" class="hover:underline">Chapter 2: The Hantzsch Reaction: A Cornerstone in Dihydropyridine Synthesis</a></li>
+                <li><a href="#chapter3" class="hover:underline">Chapter 3: Preyssler Heteropolyacids: A Detailed Catalytic Profile</a></li>
+                <li><a href="#chapter4" class="hover:underline">Chapter 4: Catalytic Synthesis of Fused 1,4-Dihydropyridines and Derivatives Using Preyssler Heteropolyacids</a></li>
+                <li><a href="#chapter5" class="hover:underline">Chapter 5: Broader Implications, Challenges, and Future Directions</a></li>
+                <li><a href="#chapter6" class="hover:underline">Chapter 6: Conclusion</a></li>
+            </ul>
+        </section>
+
+        <section id="abstract" class="section-spacing">
+            <h2 class="text-3xl mb-4">ABSTRACT</h2>
+            <p>This dissertation focuses on using Preyssler heteropolyacid (HPA) as an efficient and environmentally friendly catalyst for synthesizing 1,4-dihydropyridines (DHPs). DHPs are important nitrogen-containing compounds with significant pharmacological uses and growing applications in materials science.</p>
+            <p>Traditional DHP synthesis methods, like the Hantzsch reaction, often have drawbacks such as long reaction times, use of hazardous solvents, and low yields. This research addresses these limitations by exploring Preyssler HPA, known for its strong acidity, stability, reusability, and alignment with green chemistry principles.</p>
+            <p>The study details synthetic methods for various DHP derivatives using Preyssler HPA, achieving high yields. It also compares Preyssler HPA's performance with other catalysts, highlighting its superior activity and reusability. The dissertation further examines how Preyssler HPA functions as a catalyst and discusses the wide range of biological activities of DHPs, including their roles as calcium channel blockers and their use in materials like OLEDs.</p>
+            <p>Overall, this research emphasizes Preyssler HPA's significant potential in sustainable organic synthesis for producing important DHP compounds.</p>
+            <img src="https://i.imgur.com/gK1Y7aC.png" alt="Graphical Abstract: Reaction scheme showing synthesis of fused dihydropyridines" class="w-full md:w-3/4 lg:w-2/3">
+            <p class="image-caption">GRAPHICAL ABSTRACT</p>
+        </section>
+
+        <section id="chapter1" class="section-spacing">
+            <h2 class="text-3xl mb-4">Chapter 1: Introduction to 1,4-Dihydropyridines and Heteropolyacids</h2>
+            <p>The field of organic chemistry has long sought efficient and sustainable methods for synthesising complex molecules with diverse applications. Among these, 1,4-dihydropyridines (DHPs) represent a class of paramount importance, not only for their profound pharmacological activities but also for their utility as versatile building blocks in synthetic transformations. This dissertation aims to provide a comprehensive analysis of the catalytic synthesis of fused 1,4-dihydropyridines and 1,4-dihydropyridine derivatives, with a particular focus on the application of Preyssler heteropolyacids as catalysts. This exploration will delve into the fundamental chemistry of DHPs and heteropolyacids, the intricacies of the Hantzsch reaction, detailed characterization of Preyssler catalysts, optimization of reaction conditions, and the broader implications for green chemistry and future research.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">1.1. Historical Development and Structural Diversity of 1,4-Dihydropyridines (DHPs)</h3>
+            <img src="https://placehold.co/600x200/4A5568/BFDBFE?text=Figure+1+General-Structure-of-1-4-dihydropyridine" alt="Placeholder for Figure 1: General Structure of 1,4-dihydropyridine">
+            <p class="image-caption">Figure 1 General-Structure-of-1-4-dihydropyridine</p>
+            <img src="https://placehold.co/600x200/4A5568/BFDBFE?text=Figure+2+Dihydropyridine-3D" alt="Placeholder for Figure 2: Dihydropyridine 3D Structure">
+            <p class="image-caption">Figure 2 Dihydropyridine-3D</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">1.2. Pharmacological Significance and Broad Biological Activities of DHPs</h3>
+            <p>The primary pharmacological importance of 1,4-dihydropyridines lies in their well-established role as Ca²⁺ channel blockers. This action makes them indispensable in the treatment of various cardiovascular diseases, including hypertension and angina pectoris, with prominent examples such as nifedipine and nitrendipine widely used in clinical practice.¹</p>
+            <p>Beyond their cardiovascular applications, 1,4-dihydropyridines exhibit a remarkably broad spectrum of biological activities. These include vasodilatory, bronchodilatory, geroprotective, hepatoprotective, antitumour, antiatherosclerotic, and antidiabetic properties. More recent investigations have revealed their utility as neuroprotectants and platelet antiaggregators, as well as cerebral anti-ischaemic agents in the management of Alzheimer's disease and as chemosensitisers in tumour therapy. The extensive and diverse pharmacological profile of 1,4-dihydropyridines, spanning from broad cardiovascular effects to specific neuroprotective and antitumor activities, highlights their standing as a "privileged scaffold" in medicinal chemistry.</p>
+            <p>A particularly intriguing aspect of this class of compounds is the existence of calcium agonists, which exhibit an action profile precisely opposite to that of calcium channel blockers, increasing Ca²⁺ entry into cells. In some instances, enantiomers of the same compound have been observed to possess opposing activities. This phenomenon underscores the high specificity of receptor interactions and the profound sensitivity of biological activity to subtle structural and conformational changes within the DHP molecule. The ability to elicit such diametrically opposed effects from closely related structures, sometimes even from mirror-image isomers, indicates a nuanced modulation of the calcium channel rather than a simple on/off mechanism, making their synthesis particularly valuable for targeted drug discovery.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">1.3. Non-Medicinal Applications and Role of DHPs as Building Blocks in Organic Synthesis</h3>
+            <p>The utility of 1,4-dihydropyridines extends significantly beyond their well-known medicinal applications. They serve as crucial biomimetics for naturally occurring cofactors such as NADH and NADPH, which are pervasive in biological redox reactions. This biomimetic capability highlights their fundamental role in understanding and mimicking complex biological processes.</p>
+            <p>In the realm of general organic synthesis, 1,4-dihydropyridines are highly versatile reagents and valuable building blocks. Their inherent redox properties make them effective reductants in catalytic hydrogenation reactions and potent single-electron photoreductants. Furthermore, 4-alkyl-1,4-dihydropyridines have been extensively employed as precursors to alkyl radicals in C-C bond-forming reactions, demonstrating their utility in constructing complex molecular architectures. The broad applicability of 1,4-dihydropyridines in diverse synthetic transformations, including their roles in redox chemistry and radical reactions, significantly enhances the overall importance of developing efficient and sustainable DHP synthesis methods. This synthetic versatility implies that advancements in DHP synthesis have implications beyond drug development, potentially opening new avenues in materials science or other chemical industries.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">1.4. Overview of Heteropolyacids (HPAs): Structural Types, Acidic and Redox Properties</h3>
+            <img src="https://placehold.co/600x200/4A5568/BFDBFE?text=Figure+3+Preysslers-Anion-Structure" alt="Placeholder for Figure 3: Preyssler's Anion Structure">
+            <p class="image-caption">Figure 3 Preysslers-Anion-Structure</p>
+            <img src="https://placehold.co/600x200/4A5568/BFDBFE?text=Figure+4+Keggin-Type-Heteropoly-Anion-Structure" alt="Placeholder for Figure 4: Keggin-Type Heteropoly Anion Structure">
+            <p class="image-caption">Figure 4 Keggin-Type-Heteropoly-Anion-Structure</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">1.5. Principles of Green Chemistry and the Role of HPAs as Environmentally Benign Catalysts</h3>
+            <p>The growing imperative for sustainable chemical practices has led to the emergence of green chemistry, a paradigm focused on designing chemical products and processes that minimise or eliminate the use and generation of hazardous substances. Heteropolyacids are exemplary catalysts within this framework, embodying multiple principles of green chemistry simultaneously.</p>
+            <p>HPAs offer a solid, reusable alternative to traditional, corrosive liquid mineral acids, thereby reducing equipment corrosion and simplifying handling. Their high selectivity in catalytic reactions minimises the formation of undesirable by-products, leading to a significant reduction in waste generation. The high catalytic activity of HPAs often allows for milder reaction conditions, such as lower temperatures or shorter reaction times, which translates directly into reduced energy consumption. Furthermore, HPAs are generally non-corrosive and safer to handle compared to conventional strong acids. Their compatibility with aqueous media and their ability to facilitate reactions under solvent-free conditions represent significant advancements in reducing reliance on volatile organic solvents, aligning with the goal of minimising environmental impact. This comprehensive "green" profile makes HPAs highly desirable catalysts, contributing to a holistic approach to sustainable synthesis rather than addressing isolated environmental concerns.</p>
+        </section>
+
+        <section id="chapter2" class="section-spacing">
+            <h2 class="text-3xl mb-4">Chapter 2: The Hantzsch Reaction: A Cornerstone in Dihydropyridine Synthesis</h2>
+            <p>The Hantzsch reaction stands as a pivotal synthetic route for the construction of 1,4-dihydropyridines. Understanding its mechanistic intricacies, historical limitations, and the subsequent advancements in its methodology is crucial for appreciating the role of modern catalysis in enhancing its efficiency and environmental compatibility.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">2.1. Fundamental Mechanism of the Classical Hantzsch Dihydropyridine Synthesis</h3>
+            <p>The classical Hantzsch reaction is recognised as a one-pot, multi-component condensation that typically involves three key reactants: an aldehyde, two equivalents of a β-ketoester (such as ethyl acetoacetate), and a nitrogen source, commonly ammonia or ammonium acetate. This reaction proceeds through a cascade of distinct mechanistic steps, each contributing to the formation of the characteristic 1,4-dihydropyridine ring.</p>
+            <img src="https://placehold.co/600x200/4A5568/BFDBFE?text=Figure+5+General-Mechanism-of-Hantzsch-1-4-dihydropyridines+(1)" alt="Placeholder for Figure 5: General Mechanism of Hantzsch 1,4-dihydropyridines">
+            <p class="image-caption">Figure 5 General-Mechanism-of-Hantzsch-1-4-dihydropyridines (1)</p>
+            <p>The Hantzsch reaction, despite its "one-pot" nature, is a sequence of distinct mechanistic steps, each requiring specific activation. Acid catalysts, such as heteropolyacids, play a crucial role in facilitating these steps. The strong Brønsted acidity of HPAs enables them to protonate the carbonyl oxygen atoms of both the aldehyde and the β-dicarbonyl compounds, rendering these species more electrophilic and thus more susceptible to nucleophilic attack. This catalytic action is vital for accelerating the initial condensation reactions and promoting the subsequent dehydration steps, which are critical for overcoming the kinetic barriers inherent in classical methods.</p>
+            <img src="https://i.imgur.com/M6L2M1y.png" alt="Reaction scheme showing Knoevenagel condensation and subsequent steps in Hantzsch reaction">
+            <p class="image-caption">Figure 6 Knoevenagel condensation product (4) reacts with the enamine ester (6) via a Michael addition to form 7, which undergoes proton transfers and intramolecular enamine formation to give 9. In a separate step, dehydrogenation yields the pyridine (10). All species are shown in their charged forms where appropriate</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">2.2. Limitations of Traditional Hantzsch Methods and the Drive for Improved Protocols</h3>
+            <p>Despite its foundational importance, the classical Hantzsch synthesis has several inherent drawbacks that have historically limited its efficiency and broader applicability. These limitations include:</p>
+            <ul class="list-disc ml-6">
+                <li><strong>Long reaction times:</strong> Traditional methods often necessitate extended reflux periods, frequently exceeding 12 hours.</li>
+                <li><strong>Poor to moderate yields:</strong> This is particularly evident when employing sterically hindered aldehydes, which can impede the reaction progress.</li>
+                <li><strong>Harsh reaction conditions:</strong> The synthesis often requires the use of strong acids or elevated temperatures, which can lead to undesirable side reactions or product degradation.</li>
+                <li><strong>Use of large quantities of volatile organic solvents:</strong> Common solvents like ethanol or other lower alcohols pose environmental and safety concerns due to their volatility and flammability.</li>
+                <li><strong>Tedious workups:</strong> The isolation and purification of products from the reaction mixture can be cumbersome and time-consuming.</li>
+            </ul>
+            <p>These inherent inefficiencies and environmental drawbacks of the classical Hantzsch reaction have created a strong impetus for continuous research and development aimed at more efficient, versatile, and environmentally friendly synthetic methodologies. The consistent reporting of these limitations across various studies underscores them as major bottlenecks in DHP synthesis. This has directly driven innovation in catalysis, with the shift towards solid acid catalysts like heteropolyacids offering a promising avenue to address these challenges by improving kinetics, enhancing yields, and providing greener reaction profiles.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">2.3. Evolution of Hantzsch Synthesis: Advancements in Reaction Conditions</h3>
+            <p>The pursuit of overcoming the limitations of classical Hantzsch synthesis has led to significant advancements in reaction conditions and catalytic strategies. These developments demonstrate a clear trend towards synergistic optimisation, where combining advanced heating methods with green solvents and heterogeneous catalysts leads to significantly improved efficiency and sustainability.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Microwave-Assisted Synthesis:</h4>
+            <img src="https://i.imgur.com/2mCgQ8x.png" alt="Comparison of Conventional Heating and Microwave Heating methods">
+            <p class="image-caption">Figure 7 Conventional-and-microwave-heating-method</p>
+
+            <h4 class="text-xl mt-4 mb-2">Aqueous Media Synthesis:</h4>
+            <p>In line with green chemistry principles, there has been a growing interest in conducting organic reactions in aqueous media, thereby reducing reliance on hazardous organic solvents. For the Hantzsch synthesis, while initial attempts using ammonium acetate in water often resulted in poor yields, substituting ammonia as the nitrogen source significantly improved outcomes. The incorporation of catalysts, such as montmorillonite K10, has further enhanced yields in aqueous systems.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Solvent-Free Conditions:</h4>
+            <p>The adoption of solvent-free reaction conditions offers substantial environmental benefits by minimising waste generation and simplifying product workup procedures. This approach often involves grinding reactants with a solid acid catalyst, sometimes under microwave irradiation, to achieve efficient syntheses.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Solid Acid Catalysis (General):</h4>
+            <p>A major trend in modern organic synthesis is the replacement of corrosive and environmentally problematic liquid acids with solid, reusable catalysts. These heterogeneous catalysts offer advantages such as ease of separation from the reaction mixture and recyclability. Other solid acid catalysts, such as HY-Zeolite, have also been explored for DHP synthesis, demonstrating reduced reaction times and improved yields compared to classical methods, particularly for fused DHP systems. The evolution of the Hantzsch synthesis clearly illustrates how combining advanced heating methods (microwave), green solvents (water, solvent-free conditions), and heterogeneous catalysts (solid acids) leads to significantly improved efficiency and sustainability in a multi-pronged approach crucial for modern organic synthesis.</p>
+            <p>A comparative overview of various Hantzsch dihydropyridine synthesis methods is presented in Table 1, highlighting the advantages and disadvantages of each approach.</p>
+
+            <div class="table-caption">Table 1: Comparative Overview of Hantzsch Dihydropyridine Synthesis Methods</div>
+            <div class="overflow-x-auto rounded-lg shadow-md">
+                <table class="min-w-full divide-y divide-gray-700">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Method</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Key Reactants</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Solvent/Conditions</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Typical Reaction Time</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Typical Yield Range</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Key Advantages</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Key Disadvantages</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">Classical</td>
+                            <td class="py-3 px-4">Aldehyde, β-ketoester, Ammonia/Ammonium Acetate</td>
+                            <td class="py-3 px-4">Ethanol/Lower Alcohols, Reflux</td>
+                            <td class="py-3 px-4">12+ hours</td>
+                            <td class="py-3 px-4">Low (15-72%)</td>
+                            <td class="py-3 px-4">Simple setup</td>
+                            <td class="py-3 px-4">Long reaction times, poor yields, volatile solvents, tedious workup</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">Microwave (Domestic)</td>
+                            <td class="py-3 px-4">Aldehyde, β-ketoester, Ammonia/Ammonium Acetate</td>
+                            <td class="py-3 px-4">Aqueous NH₄OH or Ethanol</td>
+                            <td class="py-3 px-4">4 minutes</td>
+                            <td class="py-3 px-4">Moderate (21-55%)</td>
+                            <td class="py-3 px-4">Very short reaction times</td>
+                            <td class="py-3 px-4">Lack of temperature control, potential for equipment damage, moderate yields</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">Microwave (Controlled)</td>
+                            <td class="py-3 px-4">Aldehyde, β-ketoester, Ammonia/Ammonium Acetate</td>
+                            <td class="py-3 px-4">Aqueous NH₄OH</td>
+                            <td class="py-3 px-4">10-20 minutes</td>
+                            <td class="py-3 px-4">Good to Excellent (51-92%)</td>
+                            <td class="py-3 px-4">Short reaction times, high yields, temperature/pressure control, reproducibility</td>
+                            <td class="py-3 px-4">Higher equipment cost</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">Aqueous (Montmorillonite K10)</td>
+                            <td class="py-3 px-4">Aldehyde, Ethyl Acetoacetate, Ammonia</td>
+                            <td class="py-3 px-4">Water, Reflux</td>
+                            <td class="py-3 px-4">48 hours</td>
+                            <td class="py-3 px-4">Good (57-65%)</td>
+                            <td class="py-3 px-4">Environmentally benign solvent, non-corrosive catalyst</td>
+                            <td class="py-3 px-4">Longer reaction times, lower yields without catalyst</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">HY-Zeolite Catalysis</td>
+                            <td class="py-3 px-4">Dimedone, Arylaldehydes, NH₄OAc</td>
+                            <td class="py-3 px-4">Ethanol, Reflux</td>
+                            <td class="py-3 px-4">2.5-3.5 hours</td>
+                            <td class="py-3 px-4">Good to Excellent (70-90%)</td>
+                            <td class="py-3 px-4">Reduced reaction time, high yields, reusable catalyst</td>
+                            <td class="py-3 px-4">Requires organic solvent (ethanol)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">Preyssler's HPA Catalysis</td>
+                            <td class="py-3 px-4">β-dicarbon, Aldehyde, Ammonium Acetate</td>
+                            <td class="py-3 px-4">Water, Reflux</td>
+                            <td class="py-3 px-4">130 - 195 minutes</td>
+                            <td class="py-3 px-4">Good to Excellent (70-94%)</td>
+                            <td class="py-3 px-4">Environmentally benign, reusable, high yields, short reaction times, non-corrosive</td>
+                            <td class="py-3 px-4">Requires specific catalyst preparation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="chapter3" class="section-spacing">
+            <h2 class="text-3xl mb-4">Chapter 3: Preyssler Heteropolyacids: A Detailed Catalytic Profile</h2>
+            <p>Preyssler heteropolyacids stand out as exceptional catalysts due to their unique structural, chemical, and catalytic properties. A detailed examination of these attributes provides insight into their superior performance in organic synthesis, particularly for the Hantzsch reaction.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">3.1. Unique Structure and Physicochemical Properties of Preyssler Heteropolyacids (H14​[NaP5​W30​O110​])</h3>
+            <p>The Preyssler anion, [NaP₅W₃₀O₁₁₀]¹⁴⁻, possesses a distinct and intricate structure. It is characterized by a cyclic assembly of five PW6​O22​ units, which are arranged in a crown shape, encapsulating a central sodium ion (Na+) within its cavity. This unique architecture contributes significantly to its remarkable stability and catalytic properties.</p>
+            <h4 class="text-xl mt-4 mb-2">3.1.1. Strong Brønsted Acidity and Proton Mobility</h4>
+            <img src="https://i.imgur.com/mYg9z9R.png" alt="Polyhedral form of the structure of NaP5W30O110">
+            <p class="image-caption">Figure 8 The-structure-of-NaP-5-W-30-O-110-14-polyhedral-form</p>
+
+            <h4 class="text-xl mt-4 mb-2">3.1.2. High Thermal and Hydrolytic Stability</h4>
+            <p>A hallmark of Preyssler HPAs is their impressive thermal and hydrolytic stability. They are stable at elevated temperatures, enduring conditions up to 300 °C without degradation. Furthermore, they exhibit high hydrolytic stability across a wide pH range, specifically from pH 0 to 12. This robustness is particularly advantageous in aqueous reaction media, which are often challenging for other catalysts. This stability contrasts sharply with the observed degradation of some Keggin HPAs in the presence of H₂O₂ at elevated temperatures, highlighting Preyssler's superior resilience and making it a more reliable choice for industrial applications where catalyst integrity is paramount. The exceptional thermal and hydrolytic stability of Preyssler HPAs ensures their suitability for diverse reaction conditions, directly contributing to their reusability and applicability in green chemistry.</p>
+
+            <h4 class="text-xl mt-4 mb-2">3.1.3. Redox Capabilities and Electron Transfer Mechanisms</h4>
+            <p>Beyond their potent acidity, Preyssler heteropolyacids possess inherent redox capabilities, enabling them to accept and release electrons. This property contributes to their high oxidation potential. While the Hantzsch reaction is primarily an acid-catalyzed condensation, the intrinsic redox properties of Preyssler HPAs underscore their versatility, allowing them to be leveraged in other organic transformations where electron transfer mechanisms are involved. This multifunctionality expands their utility, making them valuable tools in a broader range of chemical syntheses.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">3.2. Preparation and Characterization of Preyssler Catalyst</h3>
+            <p>The preparation of the Preyssler catalyst, H14​[NaP5​W30​O110​], is a straightforward process. It involves passing a solution of its potassium salt (30 mL) in water (30 mL) through a column (50 cm x 1 cm) packed with Dowex 50W×8 resin in its H⁺ form. The eluent obtained from this ion-exchange process is then evaporated to dryness under vacuum, yielding the desired Preyssler heteropolyacid.</p>
+            <p>To confirm the successful synthesis and structural integrity of the catalyst, various characterization techniques are employed. Infrared (IR) spectroscopy is a crucial method, as it can confirm the preservation of the catalyst's structure even after multiple uses in catalytic reactions. The accessibility of this preparation method, coupled with standard characterization techniques, ensures the reliable synthesis and quality control of Preyssler HPAs, which is essential for reproducible catalytic performance.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">3.3. Reusability and Long-Term Catalytic Stability of Preyssler Heteropolyacids</h3>
+            <p>A significant advantage of Preyssler heteropolyacids, particularly from a green chemistry perspective, is their excellent reusability. The catalyst can be easily recovered from reaction mixtures through simple filtration. Quantitative studies on its reusability demonstrate that high catalytic activity is maintained even after the third reuse in 1,4-dihydropyridine synthesis. Furthermore, for other reactions such as the air oxidation of thiols, only a minimal decrease of 2-4% in catalytic activity was observed after several runs, with IR spectra confirming no structural degradation of the polyanion.</p>
+            <p>This high reusability translates directly into substantial economic and environmental benefits. By minimizing the need for fresh catalyst, it contributes to significant cost reduction in industrial processes and substantially decreases waste generation. The demonstrated high reusability of Preyssler heteropolyacids, with minimal loss of activity and structural integrity over multiple cycles, represents a significant economic and environmental advantage, making the catalytic process highly sustainable.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">3.4. Comparative Analysis: Preyssler HPAs vs. Other Acid Catalysts</h3>
+            <p>Preyssler heteropolyacids offer an optimised performance profile when compared to a range of other acid catalysts, making them a highly competitive and often preferred choice for the catalytic synthesis of 1,4-dihydropyridines.</p>
+            <ul class="list-disc ml-6">
+                <li><strong>Vs. Mineral Acids:</strong> Preyssler HPAs generally exhibit superior catalytic activity compared to conventional mineral acids like sulphuric or hydrochloric acid. This enhanced performance is attributed to their stronger intrinsic acidity and unique polyoxometalate structure. A critical advantage of HPAs is their non-corrosive nature, which significantly reduces equipment wear and safety hazards associated with handling strong mineral acids.</li>
+                <li><strong>Vs. Keggin HPAs:</strong> When compared to other common heteropolyacids, such as those with the Keggin structure, Preyssler HPAs demonstrate superior hydrolytic stability and greater resistance to degradation, particularly in the presence of oxidizing agents like H₂O₂. This enhanced stability contributes to their robustness in diverse reaction environments. It is also understood that the choice of central atom (e.g., tungsten vs. molybdenum) in Keggin HPAs can influence their acidity and catalytic activity, providing a basis for understanding Preyssler's consistently high performance.</li>
+                <li><strong>Vs. Zeolites (e.g., HY-Zeolite):</strong> Other solid acid catalysts, such as HY-Zeolite, have also shown good performance in Hantzsch synthesis, offering reduced reaction times and improved yields compared to classical methods. However, Preyssler HPAs distinguish themselves through their unique structural and stability profile, often providing a distinct and sometimes superior catalytic option.</li>
+                <li><strong>Vs Other Heterogeneous Catalysts:</strong> While various other heterogeneous catalysts, including montmorillonite K10 and carbon-based solid acids, have proven effective in DHP synthesis, Preyssler HPAs offer a unique combination of strong acidity, exceptional stability, and environmental benefits. This combination positions them as a top-tier catalyst, combining superior acidity, exceptional stability, and environmental benefits.</li>
+            </ul>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">3.5. Strategies for Enhancing Heterogeneous Catalysis and Addressing Solubility Challenges</h3>
+            <p>While heteropolyacids are recognised for their excellent catalytic properties, a notable practical challenge can be their solubility in various polar reaction media. This solubility can complicate their recovery and reuse in homogeneous catalytic systems, thereby limiting their industrial applicability.</p>
+            <p>To overcome this limitation and enhance their heterogeneous catalytic performance, significant research has focused on strategies for immobilising HPAs onto high surface area supports. Common supports include silica, alumina, and functionalised materials like amine-modified SBA-15. Immobilisation serves multiple purposes: it improves the dispersion of the active HPA phase, significantly increases the overall surface area available for catalysis, and most importantly, facilitates easier separation of the catalyst from the reaction mixture through simple filtration, thus enhancing reusability. The development of these immobilisation strategies is critical for overcoming the solubility limitations of HPAs, thereby enhancing their heterogeneous catalytic performance and enabling broader industrial adoption by simplifying catalyst separation and reuse. This area of research is vital for transitioning HPAs from laboratory curiosities to industrial workhorses.</p>
+        </section>
+
+        <section id="chapter4" class="section-spacing">
+            <h2 class="text-3xl mb-4">Chapter 4: Catalytic Synthesis of Fused 1,4-Dihydropyridines and Derivatives Using Preyssler Heteropolyacids</h2>
+            <p>This chapter delves into the specific application of Preyssler heteropolyacids in the Hantzsch reaction, detailing the proposed mechanism and optimisation of reaction conditions and presenting experimental results for both fused and non-fused 1,4-dihydropyridine derivatives.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">4.1. Proposed Mechanism of Hantzsch Reaction Catalysis by Preyssler Heteropolyacids: Insights into Active Sites and Intermediates</h3>
+            <p>The Hantzsch reaction is a multi-step process involving Knoevenagel condensation, enamine formation, Michael addition, cyclisation, and dehydration. Preyssler heteropolyacids, acting as strong Brønsted acid catalysts, play a pivotal role in facilitating each of these steps.</p>
+            <p>The strong Brønsted acidity of Preyssler HPAs, characterised by their 14 acidic protons, enables the protonation of the carbonyl oxygen atoms present in the aldehyde and β-dicarbonyl compounds (e.g., ethyl acetoacetate, dimedone). This protonation renders these carbonyls more electrophilic, thereby increasing their susceptibility to nucleophilic attack and accelerating the initial Knoevenagel condensation and subsequent Michael addition steps. Simultaneously, Preyssler HPAs catalyse the condensation of the β-ketoester with ammonium acetate or ammonia to efficiently form the crucial enamine intermediate. The acidic sites further promote the intramolecular cyclisation and the final dehydration step, which is driven by the formation of the aromatic 1,4-dihydropyridine ring.</p>
+            <p>Beyond conventional surface catalysis, the "pseudoliquid" behaviour of Preyssler HPAs is believed to contribute significantly to their high catalytic efficiency. In this unique mode, the solid HPA acts as a "catalytically active solid solvent", allowing reactant molecules to be absorbed into its three-dimensional bulk where reactions occur. This pseudoliquid environment can enhance reaction rates by increasing the effective concentration of reactants within the catalyst's pores. The strong Brønsted acidity, combined with this unique reaction environment, provides a deeper understanding of why Preyssler HPAs are so effective. Furthermore, observations suggest that protons in the surface layer of acidic caesium salts of HPAs can be more active than those in homogeneous solution, implying that the solid-liquid interface also plays a crucial role in the overall catalytic process. Preyssler heteropolyacids likely catalyse the Hantzsch reaction through a multi-point activation mechanism, leveraging their strong Brønsted acidity to activate multiple intermediates simultaneously or sequentially.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">4.2. Optimization of Reaction Conditions for Preyssler HPA-Catalyzed DHP Synthesis</h3>
+            <p>The successful implementation of Preyssler heteropolyacids in DHP synthesis relies on optimised reaction conditions, which have been thoroughly investigated.</p>
+
+            <h4 class="text-xl mt-4 mb-2">4.2.1. Influence of Catalyst Loading</h4>
+            <p>In the reported syntheses of 1,4-dihydropyridines and their fused derivatives, a remarkably low catalyst loading of 0.01 g of Preyssler heteropolyacid catalyst was sufficient for reactions involving 10-20 mmol of reactants. This minimal loading, while achieving good to excellent yields, underscores the exceptional catalytic efficiency of Preyssler HPAs. The ability to achieve high yields with such low catalyst loading directly translates to significant cost-effectiveness and reduced material consumption, thereby enhancing the "green" profile of the synthesis. This high efficiency at low loading implies a high turnover number for the catalyst, which is critical for industrial scalability and sustainable chemistry.</p>
+
+            <h4 class="text-xl mt-4 mb-2">4.2.2. Solvent Effects: Efficacy in Aqueous Media and Solvent-Free Conditions</h4>
+            <p>A cornerstone of green chemistry is the use of environmentally benign solvents. The Preyssler-catalysed Hantzsch reactions prominently feature water as the reaction medium. Water offers numerous advantages, being non-toxic, non-flammable, inexpensive, and environmentally benign. The exceptional hydrolytic stability of Preyssler HPAs across a wide pH range (pH 0-12) makes them particularly well-suited for aqueous media, where many other catalysts would degrade. Control reactions conducted in water without the catalyst yielded significantly lower product yields and required considerably longer reaction times, affirming the essential role of the Preyssler catalyst in facilitating efficient reactions in this green solvent. The successful and efficient catalysis by Preyssler HPAs in aqueous media is a key demonstration of green chemistry, leveraging water's inherent advantages while overcoming the challenges often associated with organic reactions in water.</p>
+
+            <h4 class="text-xl mt-4 mb-2">4.2.3. Temperature and Heating Methods: Reflux vs. Microwave Irradiation</h4>
+            <p>The Preyssler-catalysed syntheses of 1,4-dihydropyridines are effectively carried out under conventional reflux conditions in water. Reaction times for these syntheses typically range from 130 to 190 minutes for fused dihydropyridines and 165 to 195 minutes for 1,4-dihydropyridine derivatives. A comparison with control reactions, performed without the catalyst, reveals that the presence of Preyssler HPA appreciably shortens the reaction times and increases product yields. For instance, control reactions for fused DHPs required 7-8.5 hours for significantly lower yields (53-59%), while catalysed reactions achieved 80-94% yields in 2-3 hours. Similarly, for 1,4-dihydropyridine derivatives, control reactions took 8-9 hours for 53-59% yields, compared to 70-83% yields in 2.5-3.25 hours with the catalyst.</p>
+            <p>While the primary studies focus on reflux, the potential of microwave irradiation to further reduce reaction times has been demonstrated in other Hantzsch syntheses. The effectiveness of Preyssler HPAs under conventional reflux conditions, achieving good yields in relatively short times compared to uncatalysed reactions, indicates an optimised energy input. This implies that the catalyst is sufficiently active to perform well without needing more advanced (and potentially more expensive) heating methods like controlled microwave, making the process more accessible.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">4.3. Synthesis of Fused 1,4-Dihydropyridines (e.g., from Dimedone)</h3>
+            <p>The catalytic synthesis of fused 1,4-dihydropyridines using a Preyssler heteropolyacid catalyst provides an efficient and convenient method for preparing these complex structures. The reaction involves dimedone, various arylaldehydes, and ammonium acetate in water under reflux conditions.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Detailed Experimental Procedures:</h4>
+            <p>A mixture consisting of dimedone (20 mmol), an aryl aldehyde (10 mmol), ammonium acetate (NH₄OAc, 10 mmol), and Preyssler heteropolyacid catalyst (0.01 g) is heated at reflux in water (10 mL) for the required reaction time. The progress of the reaction is monitored by thin-layer chromatography (TLC) using an EtOAc-petroleum ether (3:1) solvent system. Upon completion of the reaction, the catalyst is easily filtered off and washed with ethyl acetate (3 x 30 mL). The reaction mixture is then cooled to room temperature, extracted with ethyl acetate, followed by washes with water and brine solution. The organic layer is dried over anhydrous sodium sulphate (Na₂SO₄​) and filtered. The filtrate is concentrated under vacuum, and the resulting residue is recrystallised from ethanol to yield the pure crystalline fused 1,4-dihydropyridine derivatives (3a-g).</p>
+
+            <h4 class="text-xl mt-4 mb-2">Yields:</h4>
+            <p>This method consistently achieves good to excellent isolated yields, ranging from 80% to 94%. The reusability of the catalyst is a significant advantage, with high catalytic activity maintained even after the third reuse. For instance, in the synthesis of 9-(4-fluorophenyl)-3,3,6,6-tetramethyl-3,4,6,7-tetrahydroacridine-1,8(2H,5H,9H,10H)-dione (3a), yields were 85% for the first run, 84% for the second, and 82% for the third reuse. This consistent performance over multiple cycles underscores the practical applicability of the catalyst.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Spectroscopic Characterisation:</h4>
+            <p>All synthesised fused 1,4-dihydropyridine derivatives (3a-g) were fully characterised by spectroscopic methods, including infrared (IR), proton nuclear magnetic resonance (1H NMR), carbon-13 nuclear magnetic resonance (13C NMR), and mass spectrometry (MS), along with elemental analysis. Melting points were also determined and compared with reported values. The detailed spectroscopic data provided robust evidence for the successful formation and purity of the desired products. The high efficiency and excellent yields for the synthesis of complex fused 1,4-dihydropyridines demonstrate the utility of Preyssler HPA catalysis for constructing multi-ring heterocyclic systems.</p>
+            <p>a Isolated yields. b All products identified by spectroscopic analysis (IR, 1H NMR, 13C NMR). c Yields obtained in the first, second, and third use of the catalyst. d Control reaction without Preyssler heteropolyacid catalyst. Data from.1</p>
+
+            <div class="table-caption">Table 2: Synthesis of Fused 1,4-Dihydropyridine Derivatives (3a-g) using Preyssler Heteropolyacid Catalyst in Water under Reflux Conditions</div>
+            <div class="overflow-x-auto rounded-lg shadow-md">
+                <table class="min-w-full divide-y divide-gray-700">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Entry</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Aldehyde</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Time (min)</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Yield (%) a, b</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Yield (%) c (Reuse of Catalytic Runs)</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Mp (°C) Reported</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Mp (°C) Found</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">a</td>
+                            <td class="py-3 px-4">4-FC₆H₄CHO</td>
+                            <td class="py-3 px-4">180 (7h) d</td>
+                            <td class="py-3 px-4">85 (59) d</td>
+                            <td class="py-3 px-4">85, 84, 82, 80</td>
+                            <td class="py-3 px-4">215–218[13]</td>
+                            <td class="py-3 px-4">216–217</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">b</td>
+                            <td class="py-3 px-4">3-BrC₆H₄CHO</td>
+                            <td class="py-3 px-4">190</td>
+                            <td class="py-3 px-4">94</td>
+                            <td class="py-3 px-4">94, 92, 92, 91</td>
+                            <td class="py-3 px-4">305–307[13]</td>
+                            <td class="py-3 px-4">303–305</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">c</td>
+                            <td class="py-3 px-4">4-ClC₆H₄CHO</td>
+                            <td class="py-3 px-4">185</td>
+                            <td class="py-3 px-4">82</td>
+                            <td class="py-3 px-4">81, 81, 80, 78</td>
+                            <td class="py-3 px-4">228–229[13]</td>
+                            <td class="py-3 px-4">228–230</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">d</td>
+                            <td class="py-3 px-4">2-ClC₆H₄CHO</td>
+                            <td class="py-3 px-4">180 (8.5h) d</td>
+                            <td class="py-3 px-4">80 (53) d</td>
+                            <td class="py-3 px-4">80, 79, 77, 75</td>
+                            <td class="py-3 px-4">217–219[13]</td>
+                            <td class="py-3 px-4">218–220</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">e</td>
+                            <td class="py-3 px-4">2-NO₂C₆H₄CHO</td>
+                            <td class="py-3 px-4">130</td>
+                            <td class="py-3 px-4">84</td>
+                            <td class="py-3 px-4">83, 83, 81, 80</td>
+                            <td class="py-3 px-4">281–282[13]</td>
+                            <td class="py-3 px-4">280–283</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">f</td>
+                            <td class="py-3 px-4">3-NO₂C₆H₄CHO</td>
+                            <td class="py-3 px-4">135</td>
+                            <td class="py-3 px-4">87</td>
+                            <td class="py-3 px-4">87, 85, 83, 82</td>
+                            <td class="py-3 px-4">273–275[13]</td>
+                            <td class="py-3 px-4">274–276</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">g</td>
+                            <td class="py-3 px-4">4-NO₂C₆H₄CHO</td>
+                            <td class="py-3 px-4">170</td>
+                            <td class="py-3 px-4">85</td>
+                            <td class="py-3 px-4">85, 84, 82, 79</td>
+                            <td class="py-3 px-4">282–283[13]</td>
+                            <td class="py-3 px-4">281–282</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">4.4. Synthesis of 1,4-Dihydropyridine Derivatives (e.g., from Ethyl Acetoacetate)</h3>
+            <p>The Preyssler heteropolyacid catalyst is also highly effective for the synthesis of non-fused 1,4-dihydropyridine derivatives from substituted benzaldehydes, ethyl acetoacetate, and ammonium acetate in water under reflux conditions.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Detailed Experimental Procedures:</h4>
+            <p>A mixture of an aldehyde (10 mmol), ethyl acetoacetate (20 mmol), ammonium acetate (NH₄OAc, 10 mmol), and Preyssler heteropolyacid catalyst (0.01 g) is heated under reflux with stirring in water (20 mL) for the required reaction time. The reaction progress is monitored by TLC. After completion, the catalyst is filtered and washed with ethyl acetate (3 x 30 mL). The reaction mixture is then washed with ice-cold water, extracted with ethyl acetate, followed by a water and brine solution wash. The organic layer is dried over anhydrous Na₂SO₄ and filtered. The filtrate is concentrated under vacuum, and the residue is recrystallised from ethanol to yield the pure crystalline 1,4-dihydropyridine derivatives (6a-g).</p>
+
+            <h4 class="text-xl mt-4 mb-2">Yields:</h4>
+            <p>The synthesis consistently provides good yields, ranging from 70% to 83%. Similar to the fused derivatives, the catalyst's reusability is demonstrated by maintaining high catalytic activity even after the third reuse. For instance, for 2,6-dimethyl-3,5-dicarboethoxy-4-(2-chlorophenyl)-1,4-dihydropyridine (6a), yields were 83% for the first run, 82% for the second, and 81% for the third reuse. Control reactions without the catalyst resulted in significantly longer reaction times and lower yields, confirming the catalyst's crucial role.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Spectroscopic Characterisation:</h4>
+            <p>All synthesised 1,4-dihydropyridine derivatives (6a-g) were fully characterised by spectroscopic methods, including IR, 1H NMR, 13C NMR, and MS, along with elemental analysis. Melting points were determined and compared with reported values. The successful synthesis of various 1,4-dihydropyridine derivatives from different aromatic aldehydes, including those with electron-donating groups (e.g., hydroxyl and alkoxyl) and electron-withdrawing groups (e.g., nitro or chloro), without detrimental effects on yields, demonstrates the broad substrate scope and robustness of the Preyssler HPA catalyst. This versatility makes the catalyst widely applicable for synthesising a diverse range of DHP derivatives.</p>
+
+            <div class="table-caption">Table 3: Synthesis of 1,4-Dihydropyridine Derivatives (6a-g) using Preyssler Heteropolyacid Catalyst in Water under Reflux Conditions</div>
+            <div class="overflow-x-auto rounded-lg shadow-md">
+                <table class="min-w-full divide-y divide-gray-700">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Entry</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Aldehyde</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Time (min)</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Yield (%) (1st run)</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Yield (Reuse of Catalytic Runs)</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Mp (°C) Reported</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Mp (°C) Found</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">a</td>
+                            <td class="py-3 px-4">2-ClC₆H₄CHO</td>
+                            <td class="py-3 px-4">195 (9.0h)d</td>
+                            <td class="py-3 px-4">83 (59)d</td>
+                            <td class="py-3 px-4">83, 82, 81, 80</td>
+                            <td class="py-3 px-4">130-131.5</td>
+                            <td class="py-3 px-4">131-132</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">b</td>
+                            <td class="py-3 px-4">2-OCH₃C₆H₄CHO</td>
+                            <td class="py-3 px-4">180</td>
+                            <td class="py-3 px-4">79</td>
+                            <td class="py-3 px-4">78, 78, 77, 74</td>
+                            <td class="py-3 px-4">164-165.5</td>
+                            <td class="py-3 px-4">164-166</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">c</td>
+                            <td class="py-3 px-4">3-OCH₃C₆H₄CHO</td>
+                            <td class="py-3 px-4">175</td>
+                            <td class="py-3 px-4">70</td>
+                            <td class="py-3 px-4">70, 69, 69, 67</td>
+                            <td class="py-3 px-4">124-125</td>
+                            <td class="py-3 px-4">123-125</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">d</td>
+                            <td class="py-3 px-4">3-OHC₆H₄CHO</td>
+                            <td class="py-3 px-4">170</td>
+                            <td class="py-3 px-4">74</td>
+                            <td class="py-3 px-4">73, 72, 72, 71</td>
+                            <td class="py-3 px-4">185-185.5</td>
+                            <td class="py-3 px-4">185-186.5</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">e</td>
+                            <td class="py-3 px-4">3-NO₂C₆H₄CHO</td>
+                            <td class="py-3 px-4">165</td>
+                            <td class="py-3 px-4">80</td>
+                            <td class="py-3 px-4">80, 79, 78, 77</td>
+                            <td class="py-3 px-4">169-171</td>
+                            <td class="py-3 px-4">169-172</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">f</td>
+                            <td class="py-3 px-4">4-CH₃C₆H₄CHO</td>
+                            <td class="py-3 px-4">175</td>
+                            <td class="py-3 px-4">75</td>
+                            <td class="py-3 px-4">75, 74, 72, 70</td>
+                            <td class="py-3 px-4">121-122</td>
+                            <td class="py-3 px-4">121-123</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">g</td>
+                            <td class="py-3 px-4">C₆H₅CHO</td>
+                            <td class="py-3 px-4">166 (8.0h)d</td>
+                            <td class="py-3 px-4">76 (53)d</td>
+                            <td class="py-3 px-4">75, 74, 72, 71</td>
+                            <td class="py-3 px-4">155-157</td>
+                            <td class="py-3 px-4">154-156.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-caption">Table 4: Spectroscopic Data for Representative 1,4-Dihydropyridine and Fused Dihydropyridine Derivatives</div>
+            <div class="overflow-x-auto rounded-lg shadow-md">
+                <table class="min-w-full divide-y divide-gray-700">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Compound ID</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Yield (%)</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Melting Point (°C)</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Key IR Absorption (νmax​/cm⁻¹)</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Key 1H NMR Shifts (δ ppm)</th>
+                            <th class="py-3 px-4 text-left text-xs font-medium uppercase tracking-wider">Key 13C NMR Shifts (δ ppm)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">Fused DHP (3a)</td>
+                            <td class="py-3 px-4">85</td>
+                            <td class="py-3 px-4">216-217</td>
+                            <td class="py-3 px-4">3353 (NH), 1618 (C=O)</td>
+                            <td class="py-3 px-4">0.97 (s, 6H, CH₃​), 1.10 (s, 6H, CH₃​), 5.10 (s, 1H, CH), 8.32 (s, 1H, NH)</td>
+                            <td class="py-3 px-4">27.3 (CH₃​), 113.3 (CH, benzene), 196.5 (C, carbonyl)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">Fused DHP (3f)</td>
+                            <td class="py-3 px-4">87</td>
+                            <td class="py-3 px-4">274-276</td>
+                            <td class="py-3 px-4">3380 (NH), 1646 (C=O)</td>
+                            <td class="py-3 px-4">0.85 (s, 6H, CH₃​), 1.02 (s, 6H, CH₃​), 5.04 (s, 1H, CH), 8.91 (s, br., 1H, NH)</td>
+                            <td class="py-3 px-4">27.5 (CH₃​), 112.3 (CH, benzene), 195.7 (C, carbonyl)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">DHP Derivative (6a)</td>
+                            <td class="py-3 px-4">83</td>
+                            <td class="py-3 px-4">131-132</td>
+                            <td class="py-3 px-4">3351 (NH), 1705 (C=O)</td>
+                            <td class="py-3 px-4">1.28 (t, 6H, ester), 2.25 (s, 6H, CH₃), 5.45 (s, 1H, CH), 6.00 (br, s, NH)</td>
+                            <td class="py-3 px-4">19.9 (CH₃), 62.2 (CH₂), 167.2 (carbonyl C)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 whitespace-nowrap">DHP Derivative (6g)</td>
+                            <td class="py-3 px-4">76</td>
+                            <td class="py-3 px-4">154-156.5</td>
+                            <td class="py-3 px-4">3345 (NH), 1687 (C=O)</td>
+                            <td class="py-3 px-4">1.22 (t, 6H, CH₃​ ester), 2.35 (s, 6H, CH₃​), 4.96 (s, 1H, CH), 5.63 (br, s, NH)</td>
+                            <td class="py-3 px-4">19.5 (CH₃), 62.2 (CH₂), 168.3 (carbonyl C)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-gray-400 text-sm mt-2">Note: Full spectroscopic data for all compounds (3a-g and 6a-g) are available in the supplementary materials of the original publication.</p>
+        </section>
+
+        <section id="chapter5" class="section-spacing">
+            <h2 class="text-3xl mb-4">Chapter 5: Broader Implications, Challenges, and Future Directions</h2>
+            <p>The successful application of Preyssler heteropolyacids in the catalytic synthesis of 1,4-dihydropyridines carries significant broader implications for organic synthesis and green chemistry. However, like any evolving methodology, it also presents challenges that warrant further investigation, paving the way for future research directions.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">5.1. Industrial Relevance and Environmental Advantages of Preyssler HPA Catalysis in DHP Synthesis</h3>
+            <p>The "green" attributes of Preyssler heteropolyacids are a key factor in their industrial appeal. They are non-corrosive, environmentally benign, inexpensive, and highly reusable, leading to minimal waste generation. These characteristics are not merely theoretical advantages but have been successfully demonstrated in large-scale industrial processes.</p>
+            <p>For instance, HPAs have been commercially applied in the hydration of isobutylene and the polymerization of tetrahydrofuran, processes that exemplify efficiency, economic viability, and environmental responsibility. These industrial applications are characterized as "clean, closed (no waste), noncorrosive, energy- and resource-saving, compact systems." The HPA process for isobutylene hydration, for example, requires about half the investment and 60% of the utility cost compared to sulfuric acid processes, while producing significantly less oligomer and n-butene by-products. Similarly, for THF polymerization, HPA catalysis offers a simple, closed system with no waste, and estimated investment and utility costs less than half of preceding processes.</p>
+            <p>The Preyssler-catalyzed DHP synthesis aligns closely with these proven industrial successes. The capability of HPAs to perform effectively in multi-ton processes with long catalyst life and reduced costs strongly implies the scalability and economic viability of their application in DHP synthesis. This positions the methodology not just as a laboratory curiosity but as a potentially viable industrial process, driven by both environmental stewardship and financial incentives. This connection elevates the significance of the research from a purely academic perspective to one with significant economic and environmental implications for the sustainable production of pharmacologically important compounds.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">5.2. Current Challenges and Limitations in Preyssler HPA-Catalyzed Hantzsch Reactions</h3>
+            <p>While Preyssler heteropolyacids offer significant advantages, their transition from laboratory success to full industrial implementation necessitates addressing several practical challenges and limitations.</p>
+            <p>One notable drawback for HPAs in general is their solubility in various polar solvents, which can complicate catalyst recovery in homogeneous systems. Although Preyssler HPAs exhibit high hydrolytic stability, this inherent solubility characteristic might still pose challenges in specific solvent systems or continuous flow reactors, where complete separation and recovery are critical.</p>
+            <p>Furthermore, while the reusability of Preyssler HPAs has been demonstrated for 3-4 cycles with minimal activity loss, true "long-term" industrial reusability, typically requiring dozens or hundreds of cycles, necessitates further rigorous validation. Catalyst deactivation mechanisms over extended periods, such as fouling or structural changes, would need to be thoroughly investigated.</p>
+            <p>Although the reported yields for DHP synthesis are generally good to excellent, specific challenging substrates or those with complex electronic properties might still benefit from further optimization to achieve quantitative yields or to broaden the substrate scope even further.</p>
+            <p>Finally, while a general acid-catalyzed mechanism has been proposed for the Hantzsch reaction, a more detailed understanding of the specific interactions between Preyssler's active sites and the various Hantzsch intermediates could lead to more rational catalyst design improvements. Such in-depth mechanistic elucidation would enable the fine-tuning of catalyst properties for even greater efficiency and selectivity. These practical challenges represent critical hurdles for broader industrial adoption, highlighting areas where further research is essential.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">5.3. Future Research Directions for Enhancing Efficiency, Selectivity, and Sustainability in DHP Synthesis</h3>
+            <p>The future of DHP synthesis, particularly utilizing Preyssler heteropolyacids, lies in a continuous cycle of innovation driven by the principles of green chemistry and the pursuit of enhanced efficiency and selectivity.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Catalyst Design and Modification:</h4>
+            <p>Future research should explore the potential for further modifying Preyssler HPAs to enhance their heterogeneous nature and catalytic performance. This includes strategies such as supporting them on various nanomaterials (e.g., silica, alumina, amine-modified SBA-15) or functionalized supports. Such immobilization could increase surface area, improve active site accessibility, and potentially enhance activity or selectivity while simplifying separation. Additionally, investigating the potential of novel catalyst systems, such as deep eutectic solvents (DESs) or other advanced nanocatalysts, for Hantzsch reactions could unlock new synthetic pathways and improved efficiencies.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Reaction Condition Optimisation:</h4>
+            <p>Further exploration of the synergy between Preyssler HPAs and advanced heating methods, such as controlled microwave irradiation, for DHP synthesis is warranted. This could lead to even shorter reaction times and higher energy efficiency, building on the success observed with other Hantzsch reactions. Investigating the feasibility of entirely solvent-free Hantzsch reactions with Preyssler HPAs, leveraging the success seen with other solid acid catalysts, would also represent a significant step towards ultimate greenness.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Broader Substrate Scope and Asymmetric Synthesis:</h4>
+            <p>Expanding the substrate scope to include more complex or chiral aldehydes and β-dicarbonyl compounds would broaden the utility of this catalytic system. Exploring the potential for asymmetric Hantzsch synthesis, perhaps through the design of chiral Preyssler catalysts or their incorporation into chiral environments, represents a high-value research direction for pharmaceutical applications. Furthermore, research into the synthesis of novel DHP derivatives with tailored pharmacological profiles or non-medicinal applications will continue to drive innovation in this field.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Mechanistic Studies:</h4>
+            <p>Conducting more in-depth mechanistic studies, possibly utilising advanced spectroscopic techniques (e.g., in situ NMR, operando IR) or computational modelling, would provide a precise understanding of the active sites and specific interactions of Preyssler HPAs with Hantzsch intermediates. Such detailed insights could guide rational catalyst design, leading to the development of even more efficient and selective catalytic systems.</p>
+
+            <h4 class="text-xl mt-4 mb-2">Life Cycle Assessment:</h4>
+            <p>To move beyond qualitative descriptions of "greenness", comprehensive life cycle assessments (LCAs) for Preyssler HPA-catalysed DHP synthesis should be performed. LCAs would quantify the overall environmental impact across the entire process, from raw material extraction to waste disposal, identifying specific areas for further improvement and ensuring truly sustainable chemical processes.</p>
+            <p>The future of DHP synthesis lies in a continuous cycle of innovation, driven by the principles of green chemistry and the pursuit of enhanced efficiency and selectivity. This involves exploring novel catalyst architectures, refining reaction conditions, expanding synthetic utility, and deepening mechanistic understanding to achieve truly sustainable and impactful chemical processes.</p>
+        </section>
+
+        <section id="chapter6" class="section-spacing">
+            <h2 class="text-3xl mb-4">Chapter 6: Conclusion</h2>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">6.1. Summary of Key Findings and Contributions</h3>
+            <p>This dissertation has provided a comprehensive overview of the catalytic synthesis of 1,4-dihydropyridines, highlighting the pivotal role of Preyssler heteropolyacids. The historical development of 1,4-dihydropyridines reveals their enduring importance, from their initial synthesis by Hantzsch to their current status as a versatile class of compounds with broad pharmacological significance, including their well-known calcium channel blocking activity, and their utility as essential building blocks in general organic synthesis.</p>
+            <p>The limitations of classical Hantzsch synthesis, such as long reaction times, moderate yields, and reliance on volatile organic solvents, have been effectively addressed through advancements in reaction methodology. These improvements underscore the critical role of catalysts and the increasing adoption of green chemistry principles.</p>
+            <p>Preyssler heteropolyacids distinguish themselves as exceptional catalysts due to their unique properties: strong Brønsted acidity with 14 acidic protons, remarkable thermal stability up to 300°C, high hydrolytic stability across a wide pH range (0-12), and inherent redox capabilities. These attributes contribute to their superior catalytic activity and environmental compatibility.</p>
+            <p>The successful application of Preyssler HPAs in the efficient and convenient synthesis of both fused 1,4-dihydropyridines (from dimedone) and 1,4-dihydropyridine derivatives (from ethyl acetoacetate) in aqueous media under reflux conditions has been demonstrated. This methodology consistently achieves good to excellent yields (70-94%) within relatively short reaction times (130-195 minutes). A significant contribution of this research is the proven reusability of the Preyssler catalyst, which maintains high catalytic activity even after multiple cycles (up to three reuses reported for DHP synthesis, with minimal activity loss in other reactions), without structural degradation.</p>
+
+            <h3 class="text-2xl mt-6 mb-3 subsection-spacing">6.2. Overall Significance of Preyssler Heteropolyacid Catalysis in the Synthesis of 1,4-Dihydropyridines</h3>
+            <p>In conclusion, Preyssler heteropolyacid catalysis offers a highly efficient, cost-effective, and environmentally benign route for the synthesis of 1,4-dihydropyridines and their derivatives. This methodology makes substantial contributions to green chemistry by enabling reactions in water, a benign solvent, thereby minimising the use of hazardous organic solvents. Furthermore, the reusability and non-corrosive nature of the Preyssler catalyst significantly reduce waste generation and operational costs, providing a sustainable alternative to traditional, often problematic, catalysts.</p>
+            <p>The potential for industrial scalability of this approach is strongly supported by the proven success of HPAs in other large-scale industrial processes, which demonstrate their efficiency and economic viability on a multi-ton scale. This research represents a significant step forward in the sustainable production of these important pharmaceutical compounds and versatile synthetic building blocks. It opens promising avenues for further innovation in catalyst design and reaction methodology, contributing to the broader goal of developing greener and more efficient chemical processes for the future.</p>
+        </section>
+
+        <section class="section-spacing">
+            <h2 class="text-3xl mb-4">Works Cited</h2>
+            <ol class="list-decimal ml-6 text-blue-300">
+                <li><a href="https://www.researchgate.net/pub%3C0%3Elication/223076015_Preyssler_catalyst_NaP5W30O11014-_A_green_efficient_and_reusable_catalyst_for_esterification_of_salicylic_acid_with_aliphatic_and_benzylic_alcohols" class="hover:underline" target="_blank">ResearchGate. https://www.researchgate.net/pub%3C0%3Elication/223076015_Preyssler_catalyst_NaP5W30O11014-_A_green_efficient_and_reusable_catalyst_for_esterification_of_salicylic_acid_with_aliphatic_and_benzylic_alcohols (accessed 2025-05-21).</a></li>
+                <li><a href="https://doi.org/10.2174/1570180820666230508100955" class="hover:underline" target="_blank">(PDF) A Review on Synthesis and Biological Potential of Dihydropyridines. ResearchGate 2025. https://doi.org/10.2174/1570180820666230508100955.</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/1,4-Dihydropyridine" class="hover:underline" target="_blank">1,4-Dihydropyridine. Wikipedia; 2025.</a></li>
+                <li><a href="https://www.researchgate.net/publication/261676267_Catalytic_synthesis_of_warfarin_acetals_by_using_different_heteropolyacid_catalysts" class="hover:underline" target="_blank">(PDF) Catalytic synthesis of warfarin acetals by using different heteropolyacid catalysts. https://www.researchgate.net/publication/261676267_Catalytic_synthesis_of_warfarin_acetals_by_using_different_heteropolyacid_catalysts (accessed 2025-05-12).</a></li>
+                <li><a href="https://doi.org/10.4067/S0717-97072012000400011" class="hover:underline" target="_blank">(PDF) Carbon-Based Solid Acid Catalyzed Synthesis of Polyhydroquinoline Derivatives via Hantzsch Reaction under Solvent-Free Conditions. ResearchGate. https://doi.org/10.4067/S0717-97072012000400011.</a></li>
+                <li><a href="https://doi.org/10.1016/j.bmcl.2007.04.002" class="hover:underline" target="_blank">Oxidative Aromatization of Hantzsch 1,4-Dihydropyridines in the Presence of Mixed-Addenda Vanadomolybdophosphate Heteropolyacid, H6PMo9V3O40. | Request PDF. ResearchGate. https://doi.org/10.1016/j.bmcl.2007.04.002.</a></li>
+                <li><a href="https://www.researchgate.net/figure/Mechanism-of-Hantzsch-reaction_fig2_340101046" class="hover:underline" target="_blank">Mechanism of Hantzsch reaction. | Download Scientific Diagram. https://www.researchgate.net/figure/Mechanism-of-Hantzsch-reaction_fig2_340101046 (accessed 2025-05-29).</a></li>
+                <li><a href="https://www.researchgate.net/figure/Mechanism-of-Hantzsch-reaction_fig2_340101046" class="hover:underline" target="_blank">Mechanism of Hantzsch reaction. ResearchGate. https://www.researchgate.net/figure/Mechanism-of-Hantzsch-reaction_fig2_340101046 (accessed 2025-05-19).</a></li>
+                <li><a href="https://www.researchgate.net/figure/Investigation-of-the-feasibility-of-reusing-Preyssler-acid-catalyst-in-synthesis-of_tbl2_258381442" class="hover:underline" target="_blank">Investigation of the feasibility of reusing Preyssler acid catalyst in... | Download Table. https://www.researchgate.net/figure/Investigation-of-the-feasibility-of-reusing-Preyssler-acid-catalyst-in-synthesis-of_tbl2_258381442 (accessed 2025-05-25).</a></li>
+                <li><a href="https://taylorandfrancis.com/knowledge/Engineering_and_technology/Chemical_engineering/Heteropoly_acid/" class="hover:underline" target="_blank">Heteropoly acid – Knowledge and References – Taylor & Francis. https://taylorandfrancis.com/knowledge/Engineering_and_technology/Chemical_engineering/Heteropoly_acid/ (accessed 2025-05-11).</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Hantzsch_pyridine_synthesis" class="hover:underline" target="_blank">Hantzsch pyridine synthesis - Wikipedia. https://en.wikipedia.org/wiki/Hantzsch_pyridine_synthesis (accessed 2025-05-29).</a></li>
+                <li><a href="https://www.organic-chemistry.org/namedreactions/hantzsch-dihydropyridine-synthesis.shtm" class="hover:underline" target="_blank">Hantzsch Dihydropyridine (Pyridine) Synthesis. https://www.organic-chemistry.org/namedreactions/hantzsch-dihydropyridine-synthesis.shtm (accessed 2025-05-29).</a></li>
+                <li><a href="https://ogst.ifpenergiesnouvelles.fr/articles/ogst/full_html/2016/02/ogst150133/ogst150133.html" class="hover:underline" target="_blank">Comparison of the Acidity of Heteropolyacids Encapsulated in or Impregnated on SBA-15 | Oil & Gas Science and Technology - Revue d’IFP Energies nouvelles. https://ogst.ifpenergiesnouvelles.fr/articles/ogst/full_html/2016/02/ogst150133/ogst150133.html (accessed 2025-05-29).</a></li>
+                <li><a href="https://www.researchgate.net/publication/254365511_ChemInform_Abstract_Catalytic_Synthesis_of_Fused_14-Dihydropyridines_and_14-Dihydropyridine_Derivatives_Using_Preyssler_Heteropolyacids_Catalyst" class="hover:underline" target="_blank">ChemInform Abstract: Catalytic Synthesis of Fused 1,4-Dihydropyridines and 1,4-Dihydropyridine Derivatives Using Preyssler Heteropolyacids Catalyst. | Request PDF. https://www.researchgate.net/publication/254365511_ChemInform_Abstract_Catalytic_Synthesis_of_Fused_14-Dihydropyridines_and_14-Dihydropyridine_Derivatives_Using_Preyssler_Heteropolyacids_Catalyst (accessed 2025-05-22).</a></li>
+                <li><a href="https://www.mdpi.com/2073-4344/13/2/419" class="hover:underline" target="_blank">Applications of Hantzsch Esters in Organocatalytic Enantioselective Synthesis. https://www.mdpi.com/2073-4344/13/2/419 (accessed 2025-05-24).</a></li>
+                <li><a href="https://www.researchgate.net/publication/385863131_A_Sustainable_and_Green_Approach_to_the_Preparation_of_Hantzsch-14-Dihydropyridines_Using_Phytic_Acid_Catalysis" class="hover:underline" target="_blank">A Sustainable and Green Approach to the Preparation of Hantzsch-1,4-Dihydropyridines Using Phytic Acid Catalysis | Request PDF. https://www.researchgate.net/publication/385863131_A_Sustainable_and_Green_Approach_to_the_Preparation_of_Hantzsch-14-Dihydropyridines_Using_Phytic_Acid_Catalysis (accessed 2025-05-20).</a></li>
+                <li><a href="https://doi.org/10.1016/j.matpr.2021.08.209" class="hover:underline" target="_blank">A Review on Recent Trends in Synthesis and Applications of 1,4-Dihydropyridines | Request PDF. ResearchGate. https://doi.org/10.1016/j.matpr.2021.08.209.</a></li>
+                <li><a href="https://www.eurekaselect.com/article/135571" class="hover:underline" target="_blank">1,4-Dihydropyridine Derivatives: An Overview of Synthesis Conditions and Biological Tests | Bentham Science. https://www.eurekaselect.com/article/135571 (accessed 2025-05-09).</a></li>
+                <li><a href="https://doi.org/10.3390/molecules29163844" class="hover:underline" target="_blank">Manoharan, K.; Bieszczad, B. Acyl-1,4-Dihydropyridines: Universal Acylation Reagents for Organic Synthesis. Molecules 2024, 29 (16), 3844. https://doi.org/10.3390/molecules29163844.</a></li>
+                <li><a href="https://doi.org/10.2174/1570179416666190206141028" class="hover:underline" target="_blank">Kokel, A.; Schäfer, C.; Török, B. Organic Synthesis Using Environmentally Benign Acid Catalysis. Curr. Org. Synth. 2019, 16 (4), 615–649. https://doi.org/10.2174/1570179416666190206141028.</a></li>
+                <li><a href="https://doi.org/10.2174/1570179416666190206141028" class="hover:underline" target="_blank">Kokel, A.; Schäfer, C.; Török, B. Organic Synthesis Using Environmentally Benign Acid Catalysis. Curr. Org. Synth. 2019, 16 (4), 615–649. https://doi.org/10.2174/1570179416666190206141028.</a></li>
+                <li><a href="https://doi.org/10.3390/12092223" class="hover:underline" target="_blank">Hekmatshoar, R.; Sajadi, S.; Heravi, M. M.; Bamoharram, F. F. H14[NaP5W30O110] as a Heterogeneous Recyclable Catalyst for the Air Oxidation of Thiols Under Solvent Free Conditions. Mol. J. Synth. Chem. Nat. Prod. Chem. 2007, 12 (9), 2223. https://doi.org/10.3390/12092223.</a></li>
+                <li><a href="https://doi.org/10.19080/OMCIJ.2016.01.555554" class="hover:underline" target="_blank">Gharib, A. Application of Heteropolyacids and Nano-Catalyst in Heterocycles Synthesis. Org. Med. Chem. Int. J. 2016, 1 (1). https://doi.org/10.19080/OMCIJ.2016.01.555554.</a></li>
+                <li><a href="https://doi.org/10.1021/acs.orglett.4c00513" class="hover:underline" target="_blank">Gallage, P. C.; McKee, M. G.; Pitre, S. P. 1,4-Dihydropyridine Anions as Potent Single-Electron Photoreductants. Org. Lett. 2024, 26 (9), 1975–1979. https://doi.org/10.1021/acs.orglett.4c00513.</a></li>
+                <li><a href="https://doi.org/10.3390/nano14090733" class="hover:underline" target="_blank">Dias, C. N.; Santos-Vieira, I. C. M. S.; Gomes, C. R.; Mirante, F.; Balula, S. S. Heteropolyacids@Silica Heterogeneous Catalysts to Produce Solketal from Glycerol Acetalization. Nanomaterials 2024, 14 (9), 733. https://doi.org/10.3390/nano14090733.</a></li>
+                <li><a href="https://doi.org/10.1515/revce-2024-0085" class="hover:underline" target="_blank">Colombo Migliorero, M. B.; Palermo, V.; Ponzinibbio, A.; Romanelli, G. P. Heteropolyacid-Alumina Composites as Heterogeneous Catalysts for the Synthesis of Organic Compounds: A Comprehensive Review. Rev. Chem. Eng. 2025. https://doi.org/10.1515/revce-2024-0085.</a></li>
+                <li><a href="https://doi.org/10.1021/acsomega.3c05106" class="hover:underline" target="_blank">Anchan, H. N.; C, P. N.; Bhat, N. S.; Kumari, M.; Dutta, S. Efficient Synthesis of Novel Biginelli and Hantzsch Products Sourced from Biorenewable Furfurals Using Gluconic Acid Aqueous Solution as the Green Organocatalyst. ACS Omega 2023, 8 (37), 34077. https://doi.org/10.1021/acsomega.3c05106.</a></li>
+            </ol>
+        </section>
+    </div>
+</body>
+</html>
